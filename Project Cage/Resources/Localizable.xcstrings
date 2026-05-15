@@ -1,7 +1,124 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "🇸🇬" : {
 
+    },
+    "🇺🇸" : {
+
+    },
+    "Dashboard" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "仪表盘"
+          }
+        }
+      }
+    },
+    "Mode" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "模式"
+          }
+        }
+      }
+    },
+    "Monitor your proxy network and connection status." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "监控代理网络和连接状态"
+          }
+        }
+      }
+    },
+    "Proxy is Running" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "代理正在运行"
+          }
+        }
+      }
+    },
+    "Proxy is Stopped" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "代理已停止"
+          }
+        }
+      }
+    },
+    "Realtime" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "实时"
+          }
+        }
+      }
+    },
+    "SakuraCat" : {
+
+    },
+    "Singapore – IEPL 02" : {
+
+    },
+    "Start" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启动"
+          }
+        }
+      }
+    },
+    "Stop" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停止"
+          }
+        }
+      }
+    },
+    "System Proxy" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "系统代理"
+          }
+        }
+      }
+    },
+    "TUN Mode" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TUN 模式"
+          }
+        }
+      }
+    },
+    "United States" : {
+
+    },
+    "Use rules to determine proxy behavior." : {
+
+    }
   },
   "version" : "1.2"
 }
