@@ -1,6 +1,14 @@
+//
+//  DashboardHeader.swift
+//  Project Cage
+//
+//  Created by Predix on 5/9/26.
+//
+
+import SwiftUI
+
 struct DashboardHeader: View {
     @Binding var isProxyRunning: Bool
-
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
 
     var body: some View {

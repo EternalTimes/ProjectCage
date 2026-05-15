@@ -24,20 +24,19 @@ struct Project_CageApp: App {
     }()
     
     var body: some Scene {
-        #if os(macOS)
-        WindowGroup {
-            ContentView()
-                .modelContainer(sharedModelContainer)
-        }
-    
-        .windowStyle(.hiddenTitleBar)
-        .windowResizability(.contentMinSize)
-    
-        #else
+            #if os(macOS)
             WindowGroup {
-                    ContentView()
-                        .modelContainer(sharedModelContainer)
-                }
-        #endif
-    }
+                AppRootView()
+                    .modelContainer(sharedModelContainer)
+            }
+            .windowStyle(.hiddenTitleBar)
+            .windowResizability(.contentMinSize)
+
+            #else
+            WindowGroup {
+                AppRootView()
+                    .modelContainer(sharedModelContainer)
+            }
+            #endif
+        }
 }

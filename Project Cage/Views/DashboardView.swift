@@ -1,3 +1,12 @@
+//
+//  DashboardView.swift
+//  Project Cage
+//
+//  Created by Predix on 5/9/26.
+//
+
+import SwiftUI
+
 struct DashboardView: View {
     let layout: DashboardLayout
 
@@ -71,46 +80,44 @@ struct DashboardView: View {
         switch layout {
         case .phone:
             return 1
-        case .tablet, .spatial:
-            return 2
-        case .desktop:
+        case .tablet, .spatial, .desktop:
             return 2
         }
     }
 
     private var horizontalPadding: CGFloat {
         switch layout {
-        case .phone: 16
-        case .tablet: 24
-        case .desktop: 28
-        case .spatial: 32
+        case .phone: return 16
+        case .tablet: return 24
+        case .desktop: return 28
+        case .spatial: return 32
         }
     }
 
     private var topPadding: CGFloat {
         switch layout {
-        case .phone: 18
-        case .tablet: 24
-        case .desktop: 26
-        case .spatial: 32
+        case .phone: return 18
+        case .tablet: return 24
+        case .desktop: return 26
+        case .spatial: return 32
         }
     }
 
     private var spacing: CGFloat {
         switch layout {
-        case .phone: 14
-        case .tablet: 16
-        case .desktop: 16
-        case .spatial: 20
+        case .phone: return 14
+        case .tablet: return 16
+        case .desktop: return 16
+        case .spatial: return 20
         }
     }
 
     private var bottomBarPadding: CGFloat {
         switch layout {
-        case .phone: 10
-        case .tablet: 16
-        case .desktop: 22
-        case .spatial: 28
+        case .phone: return 10
+        case .tablet: return 16
+        case .desktop: return 22
+        case .spatial: return 28
         }
     }
 }

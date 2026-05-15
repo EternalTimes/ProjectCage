@@ -1,12 +1,20 @@
+//
+//  AppRootView.swift
+//  Project Cage
+//
+//  Created by Predix on 5/9/26.
+//
+
+
 import SwiftUI
 
 struct AppRootView: View {
     var body: some View {
         #if os(macOS)
-        DashboardView(layout: .desktop)
+        DashboardView(layout: DashboardLayout.desktop)
 
         #elseif os(visionOS)
-        DashboardView(layout: .spatial)
+        DashboardView(layout: DashboardLayout.spatial)
 
         #else
         AdaptiveMobileDashboard()
@@ -14,9 +22,14 @@ struct AppRootView: View {
     }
 }
 
-enum DashboardLayout {
-    case phone
-    case tablet
-    case desktop
-    case spatial
+struct AdaptiveMobileDashboard: View {
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+
+    var body: some View {
+        if horizontalSizeClass == .compact {
+            DashboardView(layout: DashboardLayout.phone)
+        } else {
+            DashboardView(layout: DashboardLayout.tablet)
+        }
+    }
 }
